@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import { personalInfo } from "@/data/personal";
+import { personalInfo, contactInfo, socialLinks } from "@/data/personal";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { MetricCounterExpert } from "@/components/ui/metric-counter-expert";
 
@@ -57,13 +57,28 @@ export function HeroExpert() {
                 </Button>
                 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="lg" className="px-4">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="px-4"
+                    onClick={() => window.open(contactInfo.github, '_blank')}
+                  >
                     <Github className="h-5 w-5" />
                   </Button>
-                  <Button variant="outline" size="lg" className="px-4">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="px-4"
+                    onClick={() => window.open(contactInfo.linkedin, '_blank')}
+                  >
                     <Linkedin className="h-5 w-5" />
                   </Button>
-                  <Button variant="outline" size="lg" className="px-4">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="px-4"
+                    onClick={() => window.open(`mailto:${contactInfo.email}`, '_blank')}
+                  >
                     <Mail className="h-5 w-5" />
                   </Button>
                 </div>

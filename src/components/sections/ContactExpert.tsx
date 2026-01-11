@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
-import { personalInfo } from "@/data/personal";
+import { personalInfo, contactInfo } from "@/data/personal";
 import { AnimatedSection } from "@/components/ui/animated-section";
 
 export function ContactExpert() {
@@ -50,7 +50,7 @@ export function ContactExpert() {
                         Email profesional
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400">
-                        rene.kuhm@example.com
+                        {contactInfo.email}
                       </p>
                       <p className="text-sm text-slate-500 dark:text-slate-500 mt-1">
                         Respuesta garantizada en 24h
@@ -105,6 +105,7 @@ export function ContactExpert() {
                   <Button 
                     size="lg" 
                     className="flex-1 bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white"
+                    onClick={() => window.open(contactInfo.linkedin, '_blank')}
                   >
                     <Linkedin className="w-5 h-5 mr-2" />
                     LinkedIn
@@ -113,6 +114,7 @@ export function ContactExpert() {
                     size="lg" 
                     variant="outline"
                     className="flex-1"
+                    onClick={() => window.open(contactInfo.github, '_blank')}
                   >
                     <Github className="w-5 h-5 mr-2" />
                     GitHub
@@ -186,6 +188,7 @@ export function ContactExpert() {
                     <Button 
                       size="lg" 
                       className="w-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white group"
+                      onClick={() => window.open(`mailto:${contactInfo.email}?subject=Consulta sobre proyecto&body=Hola Rene,%0D%0A%0D%0AMe gustaría discutir un proyecto...`, '_blank')}
                     >
                       Enviar email ahora
                       <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -59,8 +59,8 @@ export const personalInfo = {
 };
 
 export const contactInfo: ContactInfo = {
-  email: "rene@kuhm.dev",
-  linkedin: "https://linkedin.com/in/rene-kuhm",
+  email: "renekuhm2@gmail.com",
+  linkedin: "https://www.linkedin.com/in/rene-kuhm-fullstack/",
   github: "https://github.com/Rene-Kuhm",
   location: "Remote • Global",
   timezone: "GMT-3 (Buenos Aires)",
@@ -76,15 +76,15 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "LinkedIn", 
-    url: "https://linkedin.com/in/rene-kuhm",
+    url: "https://www.linkedin.com/in/rene-kuhm-fullstack/",
     icon: "linkedin",
-    username: "rene-kuhm"
+    username: "rene-kuhm-fullstack"
   },
   {
     platform: "Email",
-    url: "mailto:rene@kuhm.dev",
+    url: "mailto:renekuhm2@gmail.com",
     icon: "mail",
-    username: "rene@kuhm.dev"
+    username: "renekuhm2@gmail.com"
   },
   {
     platform: "Twitter",
