@@ -66,11 +66,19 @@ export function TestimonialCard({
 
       {/* Client Info */}
       <div className="flex items-center gap-4">
-        <div className="relative h-12 w-12 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center">
-          {/* Placeholder for professional photo */}
-          <span className="text-lg font-semibold text-primary">
-            {name.split(' ').map(n => n[0]).join('')}
-          </span>
+        <div className="relative h-12 w-12 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center border-2 border-white/20">
+          {/* Professional avatar with gradient background */}
+          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+            <span className="text-lg font-bold text-white">
+              {name.split(' ').map(n => n[0]).join('')}
+            </span>
+          </div>
+          {/* Professional badge indicator */}
+          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-success-green-500 rounded-full border-2 border-white dark:border-gray-800 flex items-center justify-center">
+            <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
+          </div>
         </div>
         
         <div className="flex-1">

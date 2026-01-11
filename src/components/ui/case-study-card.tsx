@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/ui/glass-card";
 import { GradientText } from "@/components/ui/gradient-text";
+import { ProjectImagePlaceholder } from "@/components/ui/project-image-placeholder";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -63,19 +64,20 @@ export function CaseStudyCard({
     >
       {/* Project Image */}
       <div className="relative h-64 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-enterprise-blue-500 to-success-green-500 opacity-90" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white">
-            <div className="text-4xl font-bold mb-2">
-              {title.split(" ").map(word => word[0]).join("")}
-            </div>
-            <div className="text-sm opacity-80">Click to explore</div>
-          </div>
-        </div>
+        <ProjectImagePlaceholder 
+          title={title}
+          type={
+            title.includes('OpenCode') ? 'opencode' :
+            title.includes('Backend') ? 'backend' :
+            title.includes('Detection') ? 'detection' :
+            'component'
+          }
+          className="absolute inset-0"
+        />
         {featured && (
-          <div className="absolute top-4 right-4">
-            <Badge className="bg-white/20 text-white border-white/30">
-              Featured Case Study
+          <div className="absolute top-4 right-4 z-20">
+            <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
+              ⭐ Featured Case Study
             </Badge>
           </div>
         )}
