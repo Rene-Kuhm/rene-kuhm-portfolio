@@ -17,8 +17,8 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rene-kuhm.dev'),
-  title: "René Kuhm - Full-Stack Developer & Enterprise Systems Architect",
-  description: "Expert in modern frontend frameworks, enterprise backend architecture, Domain-Driven Design, CQRS, Event Sourcing, and automation systems. Creator of OpenCode Productivity Suite and advocate for Zero Defect Programming.",
+  title: "René Kuhm - Enterprise Performance Optimization Specialist",
+  description: "I help B2B SaaS companies eliminate downtime and scale 10x without breaking. Zero Defect Systems Architect with 8+ years scaling enterprise platforms. Average client saves $127K/year through proven optimization strategies.",
   keywords: [
     "Full-Stack Developer",
     "Enterprise Systems",

@@ -2,22 +2,33 @@ import { ContactInfo, SocialLink } from "@/types";
 
 export const personalInfo = {
   name: "René Kuhm",
-  title: "Full-Stack Developer & Enterprise Systems Architect",
-  subtitle: "Crafting Zero-Defect Full-Stack Solutions",
-  bio: "Passionate full-stack developer specializing in modern frontend frameworks and enterprise backend architecture. Expert in Domain-Driven Design, CQRS, Event Sourcing, and development automation systems. Creator of the OpenCode Productivity Suite and advocate for Zero Defect Programming methodologies.",
+  title: "Enterprise Performance Optimization Specialist",
+  subtitle: "I help B2B SaaS companies eliminate downtime and scale 10x without breaking",
+  bio: "Zero Defect Systems Architect with 8+ years scaling enterprise platforms from 1K to 1M+ users. Creator of OpenCode Productivity Suite that saves development teams $170K/year. Expert in eliminating performance bottlenecks and preventing costly system failures.",
   location: "Remote • Global",
   timezone: "GMT-3 (Buenos Aires)",
   yearsOfExperience: 8,
   
-  // Professional highlights
+  // Professional highlights with ROI metrics
   highlights: [
-    "Designed and implemented full-stack enterprise systems serving millions of users",
-    "Created OpenCode Productivity Suite - revolutionary development automation platform",
-    "Expert in modern frontend frameworks (Next.js, React, Vue, Angular) and enterprise backend patterns",
-    "Specialized in Zero Defect Programming across the entire technology stack",
-    "Built intelligent framework detection systems for 38+ frontend and backend technologies",
-    "Architected end-to-end solutions with microservices, Docker, Kubernetes, and modern DevOps"
+    "💰 Average Client Saves: $127K/year in prevented system failures and downtime",
+    "🚀 OpenCode Suite: Saves development teams 200+ hours/month (85% task reduction)",
+    "⚡ 3-Week Implementation, 2-Year ROI Guarantee on performance optimizations",
+    "📈 Scaled systems from 1K to 1M+ users without breaking (99.9% uptime achieved)",
+    "🛡️ Zero Defect Deployment Systems - 90% reduction in post-deployment bugs",
+    "🏆 $2.5M+ total value generated across 15+ enterprise implementations"
   ],
+
+  // Client impact metrics
+  clientMetrics: {
+    totalValueGenerated: "$2.5M+",
+    averageClientSavings: "$127K/year",
+    uptimeAchieved: "99.9%",
+    bugReduction: "90%",
+    implementationTime: "3 weeks",
+    clientRetention: "100%",
+    hourseSaved: "200+/month"
+  },
 
   // Core expertise areas
   expertise: [

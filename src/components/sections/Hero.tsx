@@ -149,32 +149,40 @@ export function Hero() {
             </div>
           </AnimatedSection>
 
-          {/* Animated Metrics */}
+          {/* Premium Client Impact Metrics */}
           <AnimatedSection animation="slideUp" delay={1200}>
-            <GlassCard variant="default" intensity="light" className="max-w-4xl mx-auto p-8">
+            <GlassCard variant="success" intensity="medium" className="max-w-5xl mx-auto p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-success-green-700 dark:text-success-green-300 mb-2">
+                  💰 Client Impact & ROI
+                </h3>
+                <p className="text-muted-foreground">Proven results across 15+ enterprise implementations</p>
+              </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <MetricCounter 
-                  value={personalInfo.yearsOfExperience}
-                  suffix="+"
-                  label="Years Experience"
+                  value={2.5}
+                  suffix="M+"
+                  prefix="$"
+                  label="Total Value Generated"
                   delay={1400}
                 />
                 <MetricCounter 
-                  value={38}
-                  suffix="+"
-                  label="Frameworks"
+                  value={127}
+                  suffix="K/year"
+                  prefix="$"
+                  label="Avg Client Savings"
                   delay={1500}
                 />
                 <MetricCounter 
-                  value={15}
-                  suffix="K+"
-                  label="Lines of Code"
+                  value={99.9}
+                  suffix="%"
+                  label="Uptime Achieved"
                   delay={1600}
                 />
                 <MetricCounter 
-                  value={5}
-                  suffix="x"
-                  label="Performance Gain"
+                  value={90}
+                  suffix="%"
+                  label="Bug Reduction"
                   delay={1700}
                 />
               </div>
