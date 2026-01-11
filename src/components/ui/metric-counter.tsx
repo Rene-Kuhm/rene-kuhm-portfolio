@@ -24,6 +24,7 @@ export function MetricCounter({
 }: MetricCounterProps) {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   const numericValue = typeof value === "string" 
@@ -31,6 +32,12 @@ export function MetricCounter({
     : value;
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
@@ -45,7 +52,7 @@ export function MetricCounter({
     }
 
     return () => observer.disconnect();
-  }, [delay]);
+  }, [delay, isMounted]);
 
   useEffect(() => {
     if (!isVisible) return;
@@ -72,6 +79,27 @@ export function MetricCounter({
   const displayValue = typeof value === "string" && value.includes("+") && count === numericValue
     ? `${count}+`
     : count.toString();
+
+  // Prevent hydration mismatch by showing 0 until mounted
+  if (!isMounted) {
+    return (
+      <div
+        ref={ref}
+        className={cn("text-center space-y-2", className)}
+      >
+        <div className="text-3xl md:text-4xl font-bold tracking-tight">
+          <span className="bg-gradient-to-r from-enterprise-blue-600 to-enterprise-blue-800 bg-clip-text text-transparent">
+            {prefix}0{suffix}
+          </span>
+        </div>
+        {label && (
+          <div className="text-sm text-muted-foreground font-medium">
+            {label}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div

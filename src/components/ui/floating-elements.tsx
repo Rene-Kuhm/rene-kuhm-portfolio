@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { cn } from "@/lib/utils";
 
 interface FloatingElementsProps {
@@ -27,9 +28,30 @@ export function FloatingElements({
     strong: "opacity-50",
   };
 
+  // Generate stable positions that won't change between server and client
+  const elements = useMemo(() => {
+    const positions = [];
+    for (let i = 0; i < count; i++) {
+      // Use deterministic positions based on index to avoid hydration mismatch
+      const seed = i * 12345; // Simple seed based on index
+      const left = ((seed % 73) / 73) * 100; // Deterministic "random" left position
+      const top = (((seed * 7) % 89) / 89) * 100; // Deterministic "random" top position
+      const delay = (i * 0.5) % 3; // Staggered delay based on index
+      const duration = 3 + (i % 4); // Duration between 3-6s based on index
+      
+      positions.push({
+        left,
+        top,
+        delay,
+        duration,
+      });
+    }
+    return positions;
+  }, [count]);
+
   return (
     <div className={cn("absolute inset-0 overflow-hidden pointer-events-none", className)}>
-      {Array.from({ length: count }).map((_, i) => (
+      {elements.map((element, i) => (
         <div
           key={i}
           className={cn(
@@ -40,10 +62,10 @@ export function FloatingElements({
             "animate-float"
           )}
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 3}s`,
-            animationDuration: `${3 + Math.random() * 4}s`,
+            left: `${element.left}%`,
+            top: `${element.top}%`,
+            animationDelay: `${element.delay}s`,
+            animationDuration: `${element.duration}s`,
           }}
         />
       ))}
