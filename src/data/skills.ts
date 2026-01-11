@@ -91,6 +91,20 @@ export const skills: Skill[] = [
     projects: ["opencode-productivity-suite", "component-library-intelligence"]
   },
   {
+    name: "Vue.js",
+    category: "Frontend",
+    level: "Expert",
+    yearsOfExperience: 5,
+    projects: ["component-library-intelligence"]
+  },
+  {
+    name: "Angular",
+    category: "Frontend",
+    level: "Advanced",
+    yearsOfExperience: 4,
+    projects: ["component-library-intelligence"]
+  },
+  {
     name: "Tailwind CSS",
     category: "Frontend",
     level: "Expert",
@@ -103,6 +117,13 @@ export const skills: Skill[] = [
     level: "Expert",
     yearsOfExperience: 8,
     projects: ["smart-tailwind-detection"]
+  },
+  {
+    name: "Svelte",
+    category: "Frontend",
+    level: "Advanced",
+    yearsOfExperience: 3,
+    projects: ["component-library-intelligence"]
   },
 
   // DevOps & Infrastructure

@@ -124,8 +124,8 @@ export function Skills() {
             Technical Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Deep expertise in enterprise architecture patterns, modern backend technologies, 
-            and development automation systems
+            Deep expertise in modern full-stack development, enterprise architecture patterns, 
+            frontend frameworks, backend technologies, and development automation systems
           </p>
         </div>
 

@@ -16,17 +16,21 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "René Kuhm - Backend Architect & Enterprise Systems Engineer",
-  description: "Expert in Domain-Driven Design, CQRS, Event Sourcing, and enterprise-grade automation systems. Creator of OpenCode Productivity Suite and advocate for Zero Defect Programming.",
+  title: "René Kuhm - Full-Stack Developer & Enterprise Systems Architect",
+  description: "Expert in modern frontend frameworks, enterprise backend architecture, Domain-Driven Design, CQRS, Event Sourcing, and automation systems. Creator of OpenCode Productivity Suite and advocate for Zero Defect Programming.",
   keywords: [
-    "Backend Architect",
+    "Full-Stack Developer",
     "Enterprise Systems",
+    "React",
+    "Next.js",
+    "Vue.js", 
+    "Angular",
+    "Node.js",
     "Domain-Driven Design",
     "CQRS",
     "Event Sourcing", 
     "Microservices",
     "Zero Defect Programming",
-    "Node.js",
     "TypeScript",
     "Kubernetes",
     "DevOps"
@@ -38,8 +42,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rene-kuhm.dev",
     siteName: "René Kuhm Portfolio",
-    title: "René Kuhm - Backend Architect & Enterprise Systems Engineer",
-    description: "Expert in enterprise backend systems, Domain-Driven Design, and development automation.",
+    title: "René Kuhm - Full-Stack Developer & Enterprise Systems Architect",
+    description: "Expert in modern frontend frameworks, enterprise backend systems, Domain-Driven Design, and development automation.",
     images: [
       {
         url: "/og-image.png",
@@ -51,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "René Kuhm - Backend Architect & Enterprise Systems Engineer",
-    description: "Expert in enterprise backend systems, Domain-Driven Design, and development automation.",
+    title: "René Kuhm - Full-Stack Developer & Enterprise Systems Architect",
+    description: "Expert in modern frontend frameworks, enterprise backend systems, Domain-Driven Design, and development automation.",
     creator: "@rene_kuhm",
     images: ["/og-image.png"],
   },

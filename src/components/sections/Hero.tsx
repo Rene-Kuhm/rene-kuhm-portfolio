@@ -61,10 +61,10 @@ export function Hero() {
           <div className="animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
               {[
-                "Domain-Driven Design",
-                "CQRS + Event Sourcing", 
+                "React & Next.js Expert",
+                "Vue.js & Angular", 
+                "Node.js & Enterprise Backend",
                 "Zero Defect Programming",
-                "Enterprise Architecture",
                 "38+ Framework Support"
               ].map((highlight) => (
                 <Badge

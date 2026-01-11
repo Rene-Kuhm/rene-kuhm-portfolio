@@ -157,8 +157,8 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Enterprise-grade solutions showcasing modern architecture patterns, 
-            automation systems, and development productivity innovations
+            Full-stack enterprise solutions showcasing modern frontend frameworks, 
+            backend architecture patterns, automation systems, and development productivity innovations
           </p>
         </div>
 

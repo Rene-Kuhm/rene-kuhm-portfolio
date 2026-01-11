@@ -14,7 +14,7 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Building enterprise-grade systems with passion, precision, and purpose
+            Building full-stack enterprise solutions with passion, precision, and purpose
           </p>
         </div>
 
@@ -40,11 +40,11 @@ export function About() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Zero Defect Programming as a guiding philosophy",
-                  "Enterprise architecture patterns for scalable solutions",
-                  "Automation-first approach to development workflows",
+                  "Zero Defect Programming across the entire technology stack",
+                  "Modern frontend frameworks with enterprise backend patterns",
+                  "Full-stack automation-first approach to development workflows",
                   "Documentation and testing as first-class citizens",
-                  "Continuous learning and knowledge sharing"
+                  "Continuous learning and knowledge sharing across technologies"
                 ].map((principle, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-enterprise-blue-500 rounded-full mt-2 flex-shrink-0" />

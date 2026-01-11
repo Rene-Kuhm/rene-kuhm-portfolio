@@ -23,7 +23,7 @@ export function Contact() {
             Let&apos;s Build Something Amazing
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss enterprise architecture, backend systems, or development automation? 
+            Ready to discuss full-stack development, enterprise architecture, or development automation? 
             I&apos;m always open to interesting conversations and opportunities.
           </p>
         </div>
@@ -50,7 +50,7 @@ export function Contact() {
               </div>
               <h3 className="text-xl font-bold mb-2">Email Me Directly</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                For project discussions, collaboration opportunities, or technical consultations
+                For full-stack projects, enterprise solutions, or technical consultations
               </p>
             </div>
             
@@ -161,11 +161,11 @@ export function Contact() {
         <div className="mt-16 text-center animate-slide-up" style={{ animationDelay: "0.8s" }}>
           <Card className="p-8 bg-gradient-to-r from-enterprise-blue-600 to-success-green-600 text-white border-none">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Build Enterprise Solutions?
+              Ready to Build Full-Stack Solutions?
             </h3>
             <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-              Whether you need enterprise architecture consultation, backend system design, 
-              or development automation solutions, I&apos;m here to help turn your vision into reality.
+              Whether you need modern frontend development, enterprise backend architecture, 
+              or end-to-end automation solutions, I&apos;m here to help turn your vision into reality.
             </p>
             <Button 
               size="lg"
