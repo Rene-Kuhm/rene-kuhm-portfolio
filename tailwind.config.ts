@@ -83,6 +83,11 @@ const config: Config = {
         "gradient-x": "gradientX 6s ease infinite",
         "float": "float 3s ease-in-out infinite",
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "glow": "glow 2s ease-in-out infinite alternate",
+        "shimmer": "shimmer 2.5s ease-in-out infinite",
+        "bounce-slow": "bounce 3s ease-in-out infinite",
+        "spin-slow": "spin 8s linear infinite",
+        "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
       keyframes: {
         fadeIn: {
@@ -107,6 +112,18 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        glow: {
+          "0%": { 
+            boxShadow: "0 0 20px rgba(59, 130, 246, 0.4)" 
+          },
+          "100%": { 
+            boxShadow: "0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.4)" 
+          },
+        },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -120,6 +137,16 @@ const config: Config = {
         '18': '4.5rem',
         '88': '22rem',
         '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '192': '48rem',
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
       },
       typography: {
         DEFAULT: {
