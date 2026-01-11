@@ -60,6 +60,7 @@ export const personalInfo = {
 
 export const contactInfo: ContactInfo = {
   email: "renekuhm2@gmail.com",
+  phone: "+54 2334 409838",
   linkedin: "https://www.linkedin.com/in/rene-kuhm-fullstack/",
   github: "https://github.com/Rene-Kuhm",
   location: "Remote • Global",

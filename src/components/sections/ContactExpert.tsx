@@ -66,11 +66,14 @@ export function ContactExpert() {
                       <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-1">
                         Teléfono/WhatsApp
                       </h4>
-                      <p className="text-slate-600 dark:text-slate-400">
-                        +54 11 1234-5678
+                      <p 
+                        className="text-slate-600 dark:text-slate-400 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        onClick={() => window.open(`https://wa.me/${contactInfo.phone?.replace(/[^0-9]/g, '')}?text=Hola René, me gustaría consultar sobre un proyecto...`, '_blank')}
+                      >
+                        {contactInfo.phone || "+54 11 1234-5678"}
                       </p>
                       <p className="text-sm text-slate-500 dark:text-slate-500 mt-1">
-                        Disponible 9:00 - 18:00 ART
+                        Click para WhatsApp • 9:00 - 18:00 ART
                       </p>
                     </div>
                   </div>
