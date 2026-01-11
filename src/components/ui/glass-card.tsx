@@ -24,16 +24,16 @@ export function GlassCard({
 
   const variantClasses = {
     default: "",
-    enterprise: "border-enterprise-blue-500/30 bg-enterprise-blue-500/5",
-    success: "border-success-green-500/30 bg-success-green-500/5",
-    warning: "border-warning-orange-500/30 bg-warning-orange-500/5",
+    enterprise: "border-moure-purple-500/30 bg-moure-purple-500/5",
+    success: "border-moure-green-500/30 bg-moure-green-500/5",
+    warning: "border-moure-orange-500/30 bg-moure-orange-500/5",
   };
 
   const shadowClasses = {
     default: "shadow-lg shadow-black/5",
-    enterprise: "shadow-xl shadow-enterprise-blue-500/10",
-    success: "shadow-xl shadow-success-green-500/10", 
-    warning: "shadow-xl shadow-warning-orange-500/10",
+    enterprise: "shadow-xl shadow-moure-purple-500/10",
+    success: "shadow-xl shadow-moure-green-500/10", 
+    warning: "shadow-xl shadow-moure-orange-500/10",
   };
 
   return (
