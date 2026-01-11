@@ -58,7 +58,7 @@ export function Hero() {
               <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-enterprise-blue-500 via-enterprise-blue-600 to-success-green-500 p-1 shadow-2xl">
                 <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-900">
                   <img 
-                    src="/images/profile/rene-kuhm-profile.jpg" 
+                    src="/images/profile/rene-kuhm-profile.png" 
                     alt="René Kuhm - Enterprise Performance Optimization Specialist"
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {
